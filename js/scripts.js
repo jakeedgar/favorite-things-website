@@ -7,11 +7,16 @@ $(document).ready(function() {
     let input1 = $("#color").val();
     let input2 = $("#dog").val();
     let input3 = $("#taco").val();
-    
-    let array = [input1, input2, input3]
-    console.log(array);
+    let input4 = $("#hero").val();
+    let input5 = $("#salad").val();
+    let array = [input1, input2, input3, input4, input5]
+    let array2 = [ ]
+    array2.push(array[1], array[0], array[2]);
 
-    $("#output").text(array)
-    
+    $(".list1").append(array2[0]);
+    $(".list2").append(array2[1]);
+    $(".list3").append(array2[2]);
+
+    $("#output").show();
   });
 });
